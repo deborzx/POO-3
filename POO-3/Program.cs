@@ -14,7 +14,7 @@ namespace POO_3
 
             //instanciando pela class quad
             //IDrawable shape = new Quad();
-            //shape.Draw();
+            //shape.Draw();c
 
 
             Drawable shape = new Line();
