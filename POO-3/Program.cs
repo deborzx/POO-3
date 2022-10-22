@@ -3,13 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Netflix.com.br;
 
 namespace POO_3
 {
+
+    class Filme
+    {
+
+    }
+
+
     internal class Program
     {
         static void Main(string[] args)
         {
+            //1*INTERFACE*
+
             //formas geométricas: line, quad, rect, tri, circ
 
             //instanciando pela class quad
@@ -17,8 +27,24 @@ namespace POO_3
             //shape.Draw();c
 
 
+            //2*CLASSE ABSTRATA*
             Drawable shape = new Line();
             shape.Draw();
+
+
+
+            //3*NAMESPACE*
+
+            //especificando que o OBJ a ser criado, esta la no NETFLIX.CS
+            Netflix.com.br.Filme filmeNetflix = new Netflix.com.br.Filme();
+
+            Teste teste = new Teste();
+
+
+            //utilizando via using Netflix
+            Serie serie = new Serie();
+
+
 
 
         Console.ReadLine();
