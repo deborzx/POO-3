@@ -13,13 +13,33 @@ namespace POO_3
             //formas geométricas: line, quad, rect, tri, circ
 
             //instanciando pela class quad
-            IDrawable shape = new Quad();
+            //IDrawable shape = new Quad();
+            //shape.Draw();
+
+
+            Drawable shape = new Line();
             shape.Draw();
+
 
         Console.ReadLine();
 
         }
     }
+
+
+    //classe abstrata
+    abstract class Drawable
+    {
+        public abstract void Draw();
+
+        public abstract float Area();
+
+    }
+
+
+
+
+
     
     //criando interface 
     interface IDrawable
@@ -33,14 +53,14 @@ namespace POO_3
 
 
     //criando classes para as formas 
-    class Line : IDrawable
+    class Line : Drawable
     {
-        public float Area()
+        public override float Area()
         {
-            return 20;
+            return 0;
         }
 
-        public void Draw()
+        public override void Draw()
         {
             Console.WriteLine("-----linha-----");
         }
